@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <!--Bootstrap CSS file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- fonts awesome iconse-->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- custom CSS file -->
+    <link rel="stylesheet" href="./css/styles.css" >
+</head>
+<body>
+<button class="nav__toggle">
+    <span class="hamburger"></span>
+  </button>
+<nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__item"><a href="#abt-me" class="nav__link">About me</a></li>
+    <li class="nav__item"><a href="#skills" class="nav__link">Skill Set</a></li>
+    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+</nav>
+  <header class="showcase">
+    <div class="container showcase-inner">
+      <h1>Mounika Gumpalli's  </h1>
+      <p>Web <span>Portfolio</span></p>
+      <a href="#abt-me" class="btn">About Me</a>
+    </div>
+  </header>
+       
+  <section class="abt-me-section">
+    <div class="abt-me" id="abt-me" >
+      <h1 class="abt-me__title">About Me</h1>
+      <p>
+        I am a Software Engineer from India currently living in Trento,Italy. <br>
+        I have a Bacheolar's Degree in Computer Science and work experince of 3.5 years , I was associated with Wipro Technologies, India as an ETL/Datawarehouse Developer
+        and worked with multiple ETL tools, databases, schedulers and other tools like SAP BO, Putty, AWS S3, Unix scripting etc..
+      <span id="readMore" >
+        <br><br>Interest for Web Development developed recently and I started learning the concepts of the same for past few months.&#13;
+        I have gained insights into basic Prototyping, HTML, CSS, Javascript, ReactJS and importance of other Javascript frameworks like Vue, NativeScript for application development.&#13;
+        I have understood the core ReactJS library related components to build an application.&#13;
+        Now I am in the process of working with ReactJS boilerplate example to get hands on in ReactJS,redux and lifecycle hooks as well.&#13;
+        The code for the few simple applications I developed is available on <a href="https://github.com/mounikagumpalli/" target="_blank">Github</a>
+        <br><br>
+        Also, the web page you are looking at is what I coded from scratch and is responsive.&#13;    
+      </span>
+        <button  id="readToggle" onclick="read()">Read More</button>
+      </p>    
+    </div>
+  </section>
+
+  <section class="skills-section section py-5" id="skills">
+    <div class="container">
+      <h3 class="section-title font-weight-bold text-center mb-3 mb-lg-5">Skills Overview</h3>
+      <div class="section-intro mx-auto text-center mb-3 mb-lg-5 text-secondary">Below is a quick overview of my main technical skill sets and tools I use.<br> Want to find out more about my experience?<br> <a href="https://drive.google.com/file/d/1JejFNd8p1W12JDRCq_LSz2747I-rXTDu/view?usp=sharing" target="_blank">Check out my online resume</a>.&#13;</div>
+      
+      <div class="skills-blocks mx-auto pt-5">
+        <div class="row">
+          <div class="skills-block col-12 col-lg-3">
+            <div class="skills-block-inner bg-white py-4 px-5 position-relative">
+              <h4 class="skills-cat text-center mb-3 mt-5">Frontend</h4>
+              <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                  <img class="skills-icon" src="./img/new/frontend-icon.svg">
+              </div>
+              <ul class="skills-list list-unstyled text-secondary">
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>React | Redux | Vue</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Javascript</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>CSS | SASS| Bootstrap</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>HTML</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Prototyping | moqups</li>
+              </ul>
+            </div><!--//skills-block-inner-->
+          </div><!--//skills-block-->
+          
+          
+          <div class="skills-block col-12 col-lg-3">
+            <div class="skills-block-inner bg-white py-4 px-5 position-relative">
+              <h4 class="skills-cat text-center mb-3 mt-5">Databases</h4>
+              <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                  <img class="skills-icon" src="./img/new/db-icon.svg">
+              </div>
+              <ul class="skills-list list-unstyled text-secondary">
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Google Firebase</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>AWS Snowflake</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Oracle</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Teradata</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>MySQL</li>
+              </ul>
+            </div><!--//skills-block-inner-->
+          </div><!--//skills-block-->
+          
+
+          <div class="skills-block col-12 col-lg-3" >
+            <div class="skills-block-inner bg-white py-4 px-5 position-relative">
+              <h4 class="skills-cat text-center mb-3 mt-5">ETL</h4>
+              <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                  <img class="skills-icon etl" src="./img/new/etl-icon.svg">
+              </div>
+              <ul class="skills-list list-unstyled text-secondary">
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Informatica</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Datastage</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Ab intio</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>SAP BO</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>ControlM | ESP</li>
+              </ul>
+            </div><!--//skills-block-inner-->
+          </div><!--//skills-block-->
+
+
+          <div class="skills-block col-12 col-lg-3">
+            <div class="skills-block-inner bg-white py-4 px-5 position-relative">
+              <h4 class="skills-cat text-center mb-3 mt-5">Others</h4>
+              <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                  <img class="skills-icon" src="./img/new/others-icon.svg">
+              </div>
+              <ul class="skills-list list-unstyled text-secondary">
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Unix scripting</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>PL SQL</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>AWS EC2 | S3</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Putty | Winscp</li>
+                <li class="mb-2"><i class="fas fa-check mr-2 text-success"></i>Mainframes</li>
+              </ul>
+            </div><!--//skills-block-inner-->
+          </div><!--//skills-block-->
+          
+        </div><!--//row-->
+      </div>
+    </div><!--//container-->
+</section><!--//skills-section-->
+
+
+    <section class="projects-section" id="projects">
+      <div class="container-fluid">
+        <div class="projects-section-header mb-3 mb-lg-5">
+          <h2 class="section-heading font-weight-bold pt-3 mx-4 mt-4 mb-1">Projects</h2>
+          <div class="section-heading-caption pb-3 mx-4 mt-1 mb-4">To show you what I have worked on...</div>
+        </div>
+      </div>
+
+      <div class="container-fluid card-container mx-auto pt-4">
+        <div class="row">
+          <div class="project-card  col-11 col-md-6 col-lg-4"  >
+            <div class="project-card-inner" id="flip1" style="transform: rotateY(0deg)" onclick="rotate('flip1')">
+              <div class="project-card-front">
+                <img src="./img/projects/socia.jpg" alt="Avatar">
+                  <h3 class="d-lg-none">Tap on the Image</h3>
+                
+                <div class="card-body">
+                  <h4 class="card-title text-truncate text-center"><a href="https://socials-e539f.firebaseapp.com/" target="_blank">Socials - webapp for events</a></h4>
+                    <ul class="list-inline mx-auto">
+                        <li class="list-inline-item"><span class="badge badge-pill  badge-dark">React</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill  badge-dark" >Redux</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill  badge-dark">Firestore</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill  badge-dark">Material UI</span></li>
+                    </ul> 
+                  </div> 
+              
+              
+              </div>
+              <div class="project-card-back">
+                <h2>Socials</h2> 
+                <p>Inspired by Facebook and built using ReactJS ,Redux,Google Firestore and cloud functions etc for managing events</p> 
+                <p><strong>Features:</strong> Authentication with email,gmail,facebook. 
+                  Events posts can be created , updated , deleted and joined/unjoined.
+                  Profile can be edited and viewed by others. 
+                  Infinite scrolling, Lazy loading, Photo uploads, Follow user etc <br>
+                  <a href="https://socials-e539f.firebaseapp.com/" target="_blank">visit Socials app </a>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  <a href="https://socials-e539f.firebaseapp.com/" target="_blank"> Link to Github</a>
+                  
+                  
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card  col-11 col-md-6 col-lg-4"  >
+            <div class="project-card-inner" id="flip3" style="transform: rotateY(0deg)" onclick="rotate('flip3')">
+              <div class="project-card-front">
+                <img src="./img/projects/photoapp.jpg" alt="Avatar">
+                <h3 class="d-lg-none">Tap on the Image</h3>
+                
+                <div class="card-body">
+                  <h4 class="card-title text-truncate text-center"><a href="https://github.com/mounikagumpalli/myInstagram" target="_blank">PhotoAPP</a></h4>
+                    <ul class="list-inline mx-auto">
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">React</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark" >Redux</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">Firebase</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">HTML/CSS</span></li>
+                    </ul> 
+                  </div> 
+              
+              
+              </div>
+              <div class="project-card-back">
+                <h2>PhotoAPP</h2> 
+                <p>This is a clone of instagram built using ReactJS, Redux, Google Firebase for uploading photos.
+                    
+                </p> 
+                <p><strong>Features:</strong> Add and Delete Photos.  
+                  View entire list of photos uploaded and Single photo.
+                  Like and unlike a photo and the number of likes obtained. 
+                  Also post a comment and view comments<br><br>
+                  <a href="https://github.com/mounikagumpalli/myInstagram" target="_blank"> Link to Github</a>
+                           
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card  col-11 col-md-6 col-lg-4"  >
+            <div class="project-card-inner" id="flip2" style="transform: rotateY(0deg)" onclick="rotate('flip2')">
+              <div class="project-card-front">
+                <img src="./img/projects/weather.jpg" alt="Avatar">
+                <h3 class="d-lg-none">Tap on the Image</h3>
+                
+                <div class="card-body">
+                  <h4 class="card-title text-truncate text-center"><a href="https://github.com/mounikagumpalli/Accuweather" target="_blank">AccuWeather</a></h4>
+                    <ul class="list-inline mx-auto">
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">React</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark" >Axios</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">Bootstrap</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">HTML/CSS</span></li>
+                    </ul> 
+                  </div> 
+              
+              
+              </div>
+              <div class="project-card-back">
+                <h2>AccuWeather</h2> 
+                <p>As a part of learning, I used a weather api which is readily available to display weather info like
+                    maximum and minimum temperature, humidity, predictions etc. 
+                    
+                </p> 
+                <p><strong>Features:</strong> Accepts 2 inputs namely city and country.  
+                  Makes an asynchronous call to weather api using axios.
+                   Data is extracted from the result obtained and the necessary information is displayed.
+                  <br>
+                  <a href="https://github.com/mounikagumpalli/Accuweather" target="_blank"> Link to Github</a>
+                           
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card  col-11 col-md-6 col-lg-4"  >
+            <div class="project-card-inner" id="flip4" style="transform: rotateY(0deg)" onclick="rotate('flip4')">
+              <div class="project-card-front">
+                <img src="./img/projects/capitalone.jpg" alt="Avatar">
+                <h3 class="d-lg-none">Tap on the Image </h3>
+                
+                <div class="card-body">
+                  <h4 class="card-title text-truncate text-center"><a href="https://drive.google.com/file/d/1JejFNd8p1W12JDRCq_LSz2747I-rXTDu/view?usp=sharing" target="_blank">Teradata Lift & Shift</a></h4>
+                    <ul class="list-inline mx-auto">
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">AWS S3</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark" >Snowflake</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">AbInitio</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">Teradata</span></li>
+                    </ul> 
+                  </div> 
+              
+              
+              </div>
+              <div class="project-card-back">
+                <h2>Client : Capital One, USA</h2> 
+                <p>The aim of the project was to move from on-premise Teradata database to AWS Cloud Snowflake DWH.  
+                    
+                </p> 
+                <p><strong>Features:</strong> Ab Initio was used to perfom data cleansing and pushed to AWS S3 via Ec2 instance. 
+                  Tokenization and other business logics were applied on the AWS S3 data and moved to snowflake.History loads were also performed.
+                  <br>
+                  <a href="https://drive.google.com/file/d/1JejFNd8p1W12JDRCq_LSz2747I-rXTDu/view?usp=sharing" target="_blank"" target="_blank"> Detailed Info</a>
+                           
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card  col-11 col-md-6 col-lg-4"  >
+            <div class="project-card-inner" id="flip5" style="transform: rotateY(0deg)" onclick="rotate('flip5')">
+              <div class="project-card-front">
+                <img src="./img/projects/usbank.jpg" alt="Avatar">
+                <h3 class="d-lg-none">Tap on the Image</h3>
+                
+                <div class="card-body">
+                  <h4 class="card-title text-truncate text-center"><a href="https://drive.google.com/file/d/1JejFNd8p1W12JDRCq_LSz2747I-rXTDu/view?usp=sharing" target="_blank">Recovery Management</a></h4>
+                    <ul class="list-inline mx-auto">
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">InformaticaPC</li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">Unix Scripting</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">Oracle</span></li>
+                    </ul> 
+                  </div> 
+              
+              
+              </div>
+              <div class="project-card-back">
+                <h2>Client: US Bank, USA</h2> 
+                <p>Recovery Management was to be carried out by US bank on their retail users, consumer banking and mortgage systems.
+                  Based on various business logics , data had to be made available for recovery management system.
+                    
+                </p> 
+                <p> InformaticaPC with unix scripting was used for data preparation and generating audit reports.
+
+
+                  <br>
+                  <a href="https://drive.google.com/file/d/1JejFNd8p1W12JDRCq_LSz2747I-rXTDu/view?usp=sharing" target="_blank"> Detailed Info</a>
+                           
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card  col-11 col-md-6 col-lg-4"  >
+            <div class="project-card-inner" id="flip6" style="transform: rotateY(0deg)" onclick="rotate('flip6')">
+              <div class="project-card-front">
+                <img src="./img/projects/nationalgrid.jpg" alt="Avatar">
+                <h3 class="d-lg-none">Tap on the Image</h3>
+                
+                <div class="card-body">
+                  <h4 class="card-title text-truncate text-center"><a href="https://drive.google.com/file/d/1JejFNd8p1W12JDRCq_LSz2747I-rXTDu/view?usp=sharing" target="_blank">NY Pipeline Safety</a></h4>
+                    <ul class="list-inline mx-auto">
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">Datastage</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark" >SAP BO</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">PL/SQL</span></li>
+                        <li class="list-inline-item"><span class="badge badge-pill badge-dark">ControlM</span></li>
+                    </ul> 
+                  </div> 
+              
+              
+              </div>
+              <div class="project-card-back">
+                <h2>Client: National Grid, USA</h2> 
+                <p>This was reporting solution developed in order to generate and produce audit reports to the New York Regulatories.
+
+                </p> 
+                <p><strong>
+                  Data was available from disparate sources. Datastage was used to apply bussiness logics and move data to datamart. 
+                  Based on user inputs Sap BO reads data from datamart and generates reports.
+                  <br>
+                  <a href="https://drive.google.com/file/d/1JejFNd8p1W12JDRCq_LSz2747I-rXTDu/view?usp=sharing" target="_blank"> Detailed Info</a>
+                           
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!--//container-->
+    </section><!--//projects-section-->
+    
+    <section class="contact-section py-5" id="contact">
+      <div class="container-fluid">
+        <h3 class="section-title font-weight-bold text mb-3 mb-lg-5">Contact</h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-intro col-lg-8 mx-lg-auto mb-5 text-center">
+            <div class="speech-bubble bg-white p-4 p-lg-5 ">
+              <p class="text-left mb-3">I'm currently looking for a job in and around Trento.
+                Want to know how I work and what I can offer? Check out my <a href="#projects">Projects</a> 
+                  and <a href="https://drive.google.com/file/d/1JejFNd8p1W12JDRCq_LSz2747I-rXTDu/view?usp=sharing" target="_blank">resume</a>. 
+                 If you are interested in hiring me for your project please use the form below to get in touch. 
+                Would you like to talk to me? <a href="tel:3475880548">Call Now<i class="fas fa-phone ml-1 text-success"></i></a>
+              </p>
+            </div>
+          </div>
+  
+          <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto  action="#contact" >
+            <h3 class="text-center mb-3">Get In Touch</h3>
+            <div class="form-row">                                                           
+                <div class="form-group col-md-6">
+                    <label class="sr-only" for="cname">Name</label>
+                    <input type="text" class="form-control" id="cname" name="name" placeholder="Name" minlength="2" required="" aria-required="true">
+                </div>                    
+                <div class="form-group col-md-6">
+                    <label class="sr-only" for="cemail">Email</label>
+                    <input type="email" class="form-control" id="cemail" name="email" placeholder="Email" required="" aria-required="true">
+                </div>
+                <div class="form-group col-12">
+                    <label class="sr-only" for="cmessage">Your message</label>
+                    <textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="10" required="" aria-required="true"></textarea>
+                </div>
+                <div class="form-group col-12">
+                    <button type="button" onclick="userData()" class="btn btn-success btn-block  py-2" >Send It</button>  
+                </div>                           
+            </div><!--//form-row-->
+          </form>
+          
+        </div><!--//row-->
+      </div><!--//container-->
+    </section><!--//section-->
+  
+
+
+
+    <!-- Jquery js file-->
+    <script src="./js/jquery.3.4.1.js"></script>
+    
+
+    <!-- Bootstrap js file-->
+    <script src="./js/bootstrap.min.js" ></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCJNRRVFwcMEPjmw9Xh1NC0VqnKJPIN298",
+    authDomain: "mounikagumpalliportfolio.firebaseapp.com",
+    databaseURL: "https://mounikagumpalliportfolio.firebaseio.com",
+    projectId: "mounikagumpalliportfolio",
+    storageBucket: "mounikagumpalliportfolio.appspot.com",
+    messagingSenderId: "752303727673",
+    appId: "1:752303727673:web:b828109ba04617aa0199e8",
+    measurementId: "G-ZM3TYVHFJ5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.firestore();
+
+ 
+
+</script>
+<script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <!--Bootstrap CSS file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- fonts awesome iconse-->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- custom CSS file -->
+    <link rel="stylesheet" href="./css/styles.css" >
+</head>
+<body>
+      <!--============================= Start Header Area======================-->
+
+  <header class="header_area">
+        <div class="main-menu">
+            
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mr-auto"></div> 
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                  </ul>
+                
+                </div>
+              </nav>
+            
+        </div>
+    </header>
+
+    <!--============================= End Header Area======================-->
+
+    <!--============================= Start Main Area======================-->
+      <main class="site-area">
+    <!--============================= Start Banner Area======================-->
+        <section class="site-banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-12 offset-md-1 site-title">
+                <h3 class="title-text">Hey!</h3>
+                <h1 class="title-text text-uppercase">I am Mounika</h1>
+                <h4 class="title-text text-uppercase">Data Engineer/Web Enthusiast</h4>
+                <div class="site-buttons">
+                  <div class="d-flex flex-row flex-wrap">
+                    <button type="button" class="btn button primary-button mr-4 text-uppercase">Hire me</button>
+                    <button type="button" class="btn button secondary-buttton mr-4 text-uppercase">Get CV</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 banner-image">
+                <img src="./img/new/woman-coding.jpg" alt="banner-image" class="img-fluid">
+              </div>
+              
+            </div>
+          </div>
+        </section>
+    <!--============================= End Banner Area======================-->
+
+      </main>
+
+    <!--============================= End Main Area======================-->
+
+      
+        <!-- <div class="showcase">
+          <img src="./img/new/woman-coding.jpg" alt="banner-image" class="img-fluid trap-image">
+          <div class="showcase-desc">
+            <h2 class="title">Mounika Gumpalli's<span>Web portofolio</span></h2>
+            <a href="#">About Me!</a>
+          </div>
+          
+        </div> -->
+
+
+        <!-- ======================================================================== -->
+      
+
+
+
+
+
+
+    <!-- Jquery js file-->
+    <script src="./js/jquery.3.4.1.js"></script>
+
+    <!-- Bootstrap js file-->
+    <script src="./js/bootstrap.min.js" ></script>
+</body>
+</html>
+
+
+/* start navigation
+.header_area .main-menu .navbar .navbar-brand{
+  padding : 0 -1rem 0 10rem;  
+}
+
+.header_area .main-menu .navbar{
+    padding : 1rem 10rem;  
+  }
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding:1.7rem;
+    color:var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* end navigation */
+
+
+/* start Banner area */
+
+.site-area .site-banner .site-title h3{
+    padding-top:35%;
+    font-weight:500;
+}
+
+.site-area .site-banner .site-title h3::after{
+content: '';
+height: 2px;
+width:16vw;
+background: black;
+display: inline-block;
+margin-left: 5%;
+transform: translateY(-10px);
+}
+
+.site-area .site-banner .site-title h1{
+    font-size: 3rem;
+}
+
+.site-area .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-area .site-banner .banner-image > img{
+    
+    width: 90rem;
+}
+
+/* end Banner area */
+
+
+.container-trap{
+    
+    /* border: black solid 5px; */
+}
+
+/* .trap{
+    margin:0 auto;
+    padding:0;
+    background:url(../img/new/woman-coding.jpg) center no-repeat,
+     linear-gradient(0deg, #74dc44 0%, #59e287 100%);
+    
+  border-left: 87vw solid #59e287;
+      border-bottom: 5em solid transparent;
+      height: 90vh;
+      width: 0px;
+        position:relative;
+      } */
+
+.showcase{
+        position: relative;
+    width: 90%;
+    height: 95%;
+    margin : 1em auto;
+    /* border: 5px solid black; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase > img{
+    opacity: 0.5;
+}
+
+.showcase::before {
+    content:'';
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background:linear-gradient(0deg, #74dc44 0%, #59e287 100%);
+    opacity: 0.7;
+}
+
+.showcase::after{
+
+    position: absolute;
+content:'';
+
+ width: 0;
+      height: 0;
+      border-bottom: 60px solid white;
+      border-left: 125vw solid transparent;
+      right:0;
+      bottom:0;
+      z-index: 2;
+      
+}
+
+.showcase .showcase-desc {
+    position: absolute;
+    color: white;
+    z-index:3;
+    line-height: 1.5em;
+    letter-spacing: 0.25em;
+}
+.showcase .showcase-desc .title {
+    text-transform: uppercase;
+}
+
+.showcase .showcase-desc .title > span {
+    display: block;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 0.5em;
+}
+
+.showcase .showcase-desc  a {
+    color: black;
+    border-radius: 25px;
+    padding: 0.35em 1em;
+    background-color: white;
+    letter-spacing: normal ;
+} */
